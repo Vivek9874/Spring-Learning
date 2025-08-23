@@ -27,6 +27,7 @@ public class JobService {
 
 	public JobPost getJob(int postId) {
 		// TODO Auto-generated method stub 
+		//int num = 10/0; this was just to test the AfterRunning annotation of Spring AOP
 		return repo.findById(postId).orElse(new JobPost());
 		
 	}
